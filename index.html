@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Metropolitan Museum of Art Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>The Metropolitan Museum of Art Collection</h1>
+    <section id="search">
+      <label for="query">Search: </label>
+      <input id="query" type="search">
+    </section>
+    <section id="meta">
+      <span id="count"></span>
+      <span id="pagination">
+        <button id="prev">&lt;</button>
+        page <span id="pageIndicator">0</span> of <span id="nPages">0</span>
+        <button id="next">&gt;</button>
+      </span>
+    </section>
+  </header>
+  <div id="loader"></div>
+  <main id="results"></main>
+  <footer>
+    developed using the <a href="https://metmuseum.github.io/">metmuseum API</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
